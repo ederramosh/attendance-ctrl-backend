@@ -31,9 +31,17 @@ const TeacherSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  cohort: {
-    type: mongoose.ObjectId,
-    ref: 'Groups',
+  group: {
+    type: [
+      {
+        type: mongoose.ObjectId,
+        ref: "Groups",
+      },
+    ],
+  },
+  rate: {
+    type: Number,
+    required: true,
   },
   salt: {
     type: String,
