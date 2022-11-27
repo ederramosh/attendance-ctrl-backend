@@ -9,6 +9,13 @@ const { newTeacher,
         updateTeacher,
         removeTeacher, } = require('./Teachers.controller');
 
+const { newStudent,
+        getAllStudents,
+        getStudentsByGroup,
+        findStudentById,
+        updateStudentById,
+        removeStudent } = require('./Students.controller');
+
 module.exports = {
     submitNewGroups,
     getAllGroups,
@@ -19,4 +26,10 @@ module.exports = {
     getAllTeachers,
     updateTeacher,
     removeTeacher,
+    newStudent,
+    getAllStudents,
+    getStudentsByGroup,
+    findStudentById,
+    updateStudentById,
+    removeStudent,
 }
