@@ -5,7 +5,9 @@ const { submitNewGroups,
         removeGroupById, } = require('./Groups.controller');
 
 const { newTeacher,
-        getAllTeachers, } = require('./Teachers.controller');
+        getAllTeachers,
+        updateTeacher,
+        removeTeacher, } = require('./Teachers.controller');
 
 module.exports = {
     submitNewGroups,
@@ -15,4 +17,6 @@ module.exports = {
     removeGroupById,
     newTeacher,
     getAllTeachers,
+    updateTeacher,
+    removeTeacher,
 }
